@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css">
+    <title>conversor de Faltas</title>
+    <style>
+.conversor{
+    width: 100%;
+}
+#display{
+
+    width: 250px;
+    height: 40px;
+    font: bold 15px arial;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+  
+      <div class="conversor" id="conversor">
+<input type="number" placeholder="Digite a soma das suas Faltas" id="display"/>
+<button onclick="calcular()" class="calcular">Calcular</button>
+<div id="res"></div>
+<div id="more"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <script>
+function calcular() {
+
+const display = document.getElementById("display").value;
+const more = document.getElementById("more");
+const res = document.getElementById("res");
+const x = display * 60;
+const y = x / 60;
+const m = y.toFixed(0);
+const i = 300 - m;
+const v = i / 6;
+const z = v.toFixed(0);
+
+if(m >= 250){
+  res.style.color = 'red'
+  res.innerHTML = 'Suas Faltas Utrapasarão o limite'
+  more.innerHTML =''
+}
+else{
+  res.style.color = 'white'
+  res.innerHTML = 'suas faltas são <br>' + m
+  more.innerHTML = 'Você pode faltar mais <br>' + z +' dias'
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container,
+.display-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(253, 253, 253);
+}
+.container {
+  flex-direction: column;
+}
+.display-select {
+  height: 50vh;
+}
+.btn-select {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 10px;
+  border: none;
+  border-right: 1px solid rgb(194, 194, 194);
+  margin: 0 20px;
+  box-shadow: 2px 3px 4px rgb(6, 201, 201);
+  cursor: pointer;
+  font: bolder 15px arial;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+}
+.container h3 {
+  margin-top: 50px;
+  font: lighter 23px arial;
+}
+.container h1 {
+  font: bold 32px arial;
+}
+.conversor{
+    width: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 1s;
+}
+.container input{
+    width: 250px;
+    height: 40px;
+    font: bold 15px arial;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    
+}
+.calcular{
+    margin: 10px 0;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    font: bold 16px arial;
+    border-radius: 5px;
+    background-color: rgb(118, 163, 148);
+    cursor: pointer;;
+}
+#res,#more{
+    text-align: center;
+    margin-top: 50px;
+    font: bold 20px arial;
+    color: white;
+    transition: all 1s ease-in-out;
+}
